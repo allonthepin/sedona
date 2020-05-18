@@ -1,0 +1,27 @@
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}   
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.hero {
+  background-image: url(img/background-photo.jpg)
+}
+
+.socials a {
+  background-color: #81B3D2
+}
