@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <nav class="main-navigation">
+      <a href="index.html" class="logo">
+      <img src="img/logo.svg" alt="Логотип города Седона">
+     </a>
+      <ul class="main-navigation-links">
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Фото и видео</a>
+        </li>
+        <li>
+          <a href="#">Карта штата</a>
+        </li>
+        <li>
+          <a href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+     <form action="" method="GET">
+       <label class="checkbox-title">Инфраструктура:
+        <input type="checkbox" name="pool" checked>Бассейн 
+        <input type="checkbox" name="parking">Парковка
+        <input type="checkbox" name="Wi-Fi">Wi-Fi
+      </label>
+      <label class="checkbox-title">Тип жилья:
+        <input type="checkbox" name="hotel" checked>Гостиница
+        <input type="checkbox" name="motel" checked>Мотель
+        <input type="checkbox" name="apartments" checked>Апартаменты
+      </label>
+      <div class="range">
+        <button type="submit">Показать</button>
+      </div>
+    </form>
+    <section class="results">
+      <h2 class="results-title">Найдено: 3</h2>
+      <span class="section-links-title">Сортировка</span>
+      <ul class="section-links">
+        <li>
+          <a href="#" class="link">По цене</a>
+        </li>
+        <li>
+          <a href="#" class="link">По типу</a>
+        </li>
+        <li>
+          <a href="#" class="link">По рейтингу</a>
+        </li>
+      </ul>
+      <ul class="article-list">
+      <article class="found-hotel">
+        <h3 class="hotel-title">Amara Resort & Spa</h3>
+        <span class="hotel-information">Гостиница</span>
+        <span class="hotel-information">От 4000 Р.</span>
+        <a href="#" class="article-link">Подробнее</a>
+        <a href="#" class="article-link">Забронировать</a>
+        <img src="img/hotel.jpg">
+      </article>
+       <article class="found-hotel">
+        <h3 class="hotel-title">Desert Quail Inn</h3>
+        <span class="hotel-information">Мотель</span>
+        <span class="hotel-information">От 3000 Р.</span>
+        <a href="#" class="article-link">Подробнее</a>
+        <a href="#" class="article-link">Забронировать</a>
+        <img src="img/motel.jpg">
+      </article>
+       <article class="found-hotel">
+        <h3 class="hotel-title">Villas at Poco Diablo</h3>
+        <span class="hotel-information">Апартаменты</span>
+        <span class="hotel-information">От 2000 Р.</span>
+        <a href="#" class="article-link">Подробнее</a>
+        <a href="#" class="article-link">Забронировать</a>
+        <img src="img/apartent.jpg">
+      </article>
+    </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p class="contacts">
+      <a href="#">#visitsedona</a>
+      <a href="tel:84956660166"> Тел: +7(495) 666-01-66</a>
+    </p>
+    <ul class="socials">
+      <li>
+        <a href="#">
+          <img src="img/twitter.svg">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/facebook.svg">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/youtube.svg">
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">
+      <span class="copyright-text">Website by</span>
+      <img src="img/logo-htmlacademy.svg">
+    </p>
+  </footer>
+</body>
+
