@@ -1,8 +1,22 @@
 
+body{
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+  color:#333333;;
+  background-color: #FFFFFF;; 
+}
+
+
 a {
   text-decoration: none;
   color: inherit; 
 }
+
 
 ul {
   list-style: none;
@@ -18,10 +32,133 @@ ul {
   margin: -1px;
   overflow: hidden;
 }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.navigation-link {
+line-height: 26px;
+}
+
+
 .hero {
   background-image: url(img/background-photo.jpg)
 }
 
+.advantages-title {
+  font-size: 21px;
+}
+
+.section-text {
+  font-weight: normal;
+  line-height: 26px
+}
+
+.reason {
+  font-size: 21px;
+}
+
+.comment {
+  font-weight: normal;
+}
+
+.number {
+  font-weight: normal;
+}
+
+.hotel-search-title {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.offer {
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.hotel-search-button {
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #766357;
+}
+
+.form-text {
+  line-height: 26px;
+}
+
+.form-input::placeholder {
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-button {
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #81B3D2;
+}
+
+.contacts {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotels-form {
+  background-image: url(img/background.jpg)
+}
+
+.checkbox-title {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.results-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.section-links-title {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.link {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81B3D2;
+}
+
+.hotel-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-information {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.article-link {
+  color: #FFFFFF;
+  background-color: #81B3D2;
+}
+
+.alternate {
+  background-color:#766357;
+}
+
 .socials a {
-  background-color: #81B3D2
+  background-color: #81B3D2;
+  background-repeat: no-repeat;
 }
