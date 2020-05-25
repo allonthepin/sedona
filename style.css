@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 
 body{
   margin: 0;
@@ -39,35 +43,151 @@ ul {
   padding: 0 15px;
 }
 
-
-.navigation-link {
-line-height: 26px;
+.logo {
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.main-navigation-links {
+  display: flex;
+
+}
+
+.main-navigation-link {
+  line-height: 26px;
+  padding: 15px;
+  display: block;
+  text-align: center;
+
+}
+
+
+.main-navigation-item {
+  width: 20%;
+  margin-right: auto;
+}
 
 .hero {
   background-image: url(img/background-photo.jpg)
 }
 
+.hero img {
+ display: block; 
+ margin: 0 auto;
+}
+
+.advantages {
+  padding-top: 98px;
+  padding-bottom: 51px;
+}
+
 .advantages-title {
   font-size: 21px;
+  width: 40%;
+  display: block; 
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 42px;
+  
 }
 
 .section-text {
   font-weight: normal;
-  line-height: 26px
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.advantages-item {
+  display: flex;
+
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.main-advantage {
+  background-color: #81B3D2;
+  color: #FFFFFF;
 }
 
 .reason {
   font-size: 21px;
+  text-align: center;
+  display: block; 
+  margin: 0 auto;
 }
+
 
 .comment {
   font-weight: normal;
+  text-align: center;
 }
 
 .number {
   font-weight: normal;
+  margin-top: 25px;
+  margin-bottom: 23px;
+  display: block;
+  text-align: center;
+
+}
+
+.plus-item {
+  width: 30%;
+  flex-grow: 1;
+  padding: 40px 80px;
+}
+
+.plus-item::last-child {
+  margin: 0;
+}
+
+.advantages-image {
+  width: 60%;
+  flex-grow: 2;
+}
+
+.light {
+  display: flex;
+}
+
+.privilege-item {
+  width: 30%;
+  flex-grow: 1;
+  padding: 60px 70px; 
+}
+
+.privilege::before {
+  content:"";
+  width: 75px;
+  height: 80px;
+  background-color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 28px
+}
+
+.privilege.house::before {
+  background-image: url(img/house.svg);
+  background-repeat: no-repeat;
+}
+
+.privilege.food::before {
+  background-image: url(img/food.svg);
+  background-repeat: no-repeat;
+}
+
+.privilege.souvenirs::before {
+  background-image: url(img/souvenirs.svg);
+  background-repeat: no-repeat;
 }
 
 .hotel-search-title {
