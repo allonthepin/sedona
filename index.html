@@ -57,6 +57,7 @@
           </div>
           <img src="img/bridge.jpg" alt="" class="advantages-image">
         </li>
+        <div class="plus-wrapper">
         <li class="plus-item">
           <h3 class="reason">Небольшая площадь</h3>
           <p class="comment">
@@ -78,6 +79,7 @@
             Большинство едет в гранд каньон и толпится там
           </p>
         </li>
+      </div>
       </ul>
       <ul class="advantages-list light">
         <li class="privilege-item">
@@ -97,32 +99,39 @@
       </ul>
     </section>
     <section class="hotel-search">
-      <h2 class="hotel-search-title">Заинтересовались?</h2>
-      <p class="offer">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-      <button type="button" class="hotel-search-button">Поиск гостиницы в седоне</button>
-      <form action="" method="GET">
-        <label class="form-text">
-          <span>Дата заезда</span>
-          <input type="text" name="checkin" class="form-input" placeholder="24 апреля 2017">
-        </label>
-        <label class="form-text">
-          <span>Дата выезда</span>
-          <input type="text" name="checkout" class="form-input" placeholder="4 июля 2017 года">
-        </label>
-        <label class="form-text">
-          <span>Взрослые:</span>
-          <input type="text" name="adults" class="form-input" placeholder="2">
-        </label>
-        <label class="form-text">
-          <span>Дети:</span>
-          <input type="text" name="children" class="form-input" placeholder="0">
-        </label>
-        <button type="submit" class="form-button">Найти</button>
-      </form>
-      <section class="map">
-        <h2 class="visually-hidden">Город Седона на карте</h2>
-        <img src="img/map.jpg" alt="">
-      </section>
+      <div class="container">
+        <h2 class="hotel-search-title">Заинтересовались?</h2>
+        <p class="offer">Укажите предполагаемые даты поездки,<br>  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+        <div class="hotel-search-container">
+          <button type="button" class="hotel-search-button">Поиск гостиницы в седоне</button>  
+          <form action="" method="GET" class="hotel-search-form">
+            <label class="form-text">
+              <span>Дата заезда</span>
+              <input type="text" name="checkin" class="form-input check-in" placeholder="24 апреля 2017">
+            </label>
+            <label class="form-text">
+              <span>Дата выезда</span>
+              <input type="text" name="checkout" class="form-input check-out" placeholder="4 июля 2017 года">
+            </label>
+            <div class="form-wrapper">
+              <label class="form-text">
+                <span>Взрослые:</span>
+                <input type="text" name="adults" class="form-input adults" placeholder="2">
+              </label>
+              <label class="form-text">
+                <span>Дети:</span>
+                <input type="text" name="children" class="form-input children" placeholder="0">
+              </label>
+            </div>
+            <button type="submit" class="form-button">Найти</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Город Седона на карте</h2>
+      <img src="img/map.jpg" alt="">
     </section>
   </main>
   <footer class="page-footer">
