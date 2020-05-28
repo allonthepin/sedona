@@ -243,9 +243,16 @@ ul {
 
 .form-text {
   line-height: 26px;
-  display: block;
+  display: flex;
   margin-bottom: 35px;
 
+}
+
+
+.form-text span {
+  width: 100px;
+  margin-right: 15px;
+  text-align: right;
 }
 
 .form-input {
@@ -266,9 +273,6 @@ ul {
   color: #000000;
 }
 
-.check-in {
-  background-color: #FFFFFF;
-}
 
 .adults {
   width: 20%;
@@ -296,13 +300,68 @@ ul {
   border:0;
 }
 
-.contacts {
-  font-size: 21px;
-  line-height: 26px;
+.map-image {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  font-size: 21px;
+  line-height: 26px; 
+  padding-top: 23px;
+  padding-bottom: 36px;
+  padding-left: 117px;
+  margin: 0;
+}
+
+.contacts-link {
+  display: block;
+}
+
+.hashtag {
+  margin-bottom: 9px;
+}
+
+.socials {
+  display: flex;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.socials a {
+  background-color: #81B3D2;
+  background-repeat: no-repeat;
+  padding: 15px;
+  margin-right: 6px;
+  width: 48px;
+  height: 46px;
+  display: flex;
+}
+
+.copyright {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.copyright-image {
+  padding-top: 38px;
+  padding-bottom: 41px;
+}
+
+
 .hotels-form {
-  background-image: url(img/background.jpg)
+  background-image: url(img/background.jpg);
+}
+
+.checkbox-caption {
+  color: #FFFFFF;
 }
 
 .checkbox-title {
@@ -328,26 +387,76 @@ ul {
   color: #81B3D2;
 }
 
+.article-list li {
+  border-top: 1px solid red;
+}
+
+.hotel {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hotel-image {
+  margin-right: 30px;
+}
+
 .hotel-title {
   font-size: 21px;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 7px;
 }
 
-.hotel-information {
+.hotel-description {
+  margin-top: 0;
+  margin-bottom: 15px;
   font-weight: normal;
   font-size: 14px;
+}
+
+.hotel-actions {
+  margin: 0;
+}
+
+.hotel-sizefix {
+  display: inline-block;
+  min-width: 110px;
+  margin-right: 6px;
+}
+
+.hotel-rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-rating-value {
+  margin-top: auto;
+  color: #666666;
+  background-color: #F2F2F2;
+  font-weight: normal;
+  min-width: 110px;
+  padding: 3px 12px;
+  text-align: center;
 }
 
 .article-link {
   color: #FFFFFF;
   background-color: #81B3D2;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .alternate {
   background-color:#766357;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.socials a {
-  background-color: #81B3D2;
-  background-repeat: no-repeat;
+.hotel-rating {
+  margin-left: auto;
 }
