@@ -29,35 +29,52 @@
     </nav>
   </header>
   <main>
-     <form action="" method="GET" class="hotels-form">
-       <label class="checkbox-title">Инфраструктура:
-          <input type="checkbox" name="pool" checked class="checkbox">
-          <span class="checkbox-caption">Бассейн</span>
-       </label> 
-       <label>
-          <input type="checkbox" name="parking" class="checkbox">
-          <span class="checkbox-caption">Парковка</span>
-       </label>
-       <label>
-          <input type="checkbox" name="Wi-Fi" class="checkbox">
-         <span class="checkbox-caption">Wi-Fi</span>
-       </label>
-       <label class="checkbox-title">Тип жилья:
-          <input type="checkbox" name="hotel" checked class="checkbox">
-          <span class="checkbox-caption">Гостиница</span>
-       </label>
-       <label>
-          <input type="checkbox" name="motel" checked class="checkbox">
-          <span class="checkbox-caption">Мотель</span>
-       </label>
-       <label>
-          <input type="checkbox" name="apartments" checked class="checkbox">
-          <span class="checkbox-caption">Апартаменты</span>
-       </label>
-       <div class="range">
-        <button type="submit">Показать</button>
+    <form action="" method="GET" class="hotels-form">
+      <div class="hotels-filter container">
+        <div class="filter-options">
+          <div class="filter-group">
+            <span class="filter-group-legend">Инфраструктура:</span>
+            <label class="checkbox">
+              <input type="checkbox" name="pool" checked class="visually-hidden">
+               <span class="checkbox-indicator"></span>
+              <span class="checkbox-caption">Бассейн</span>
+            </label> 
+            <label class="checkbox">
+              <input type="checkbox" name="parking" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              <span class="checkbox-caption">Парковка</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="Wi-Fi" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              <span class="checkbox-caption">Wi-Fi</span>
+            </label>
+          </div>
+          <div class="filter-group">
+              <span class="filter-group-legend">Тип жилья:</span>
+              <label class="checkbox">
+                <input type="checkbox" name="hotel" checked class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <span class="checkbox-caption">Гостиница</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="motel" checked class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <span class="checkbox-caption">Мотель</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="apartments" checked class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <span class="checkbox-caption">Апартаменты</span>
+              </label>
+            </div>
+        </div>
+
+        <div class="range">
+          <button type="submit">Показать</button>
+        </div>
       </div>
-     </form>
+    </form>
     <section class="results">
       <h2 class="results-title">Найдено: 3</h2>
       <span class="section-links-title">Сортировка</span>

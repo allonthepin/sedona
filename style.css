@@ -355,19 +355,72 @@ ul {
   padding-bottom: 41px;
 }
 
+.hotels-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+ .filter-options {
+  display: flex;
+ }
+
+.filter-group {
+  margin-right: 119px;
+}
+
+
+.filter-group-legend {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  padding-bottom: 24px;
+}
 
 .hotels-form {
   background-image: url(img/background.jpg);
+  min-height: 200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.checkbox {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.checkbox input:checked + .checkbox-indicator::before{
+  display: block;
 }
 
 .checkbox-caption {
   color: #FFFFFF;
 }
 
-.checkbox-title {
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
+.checkbox-indicator {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: solid white 1.34px;
+  margin-right: 16px;
+  position: relative;
+
+}
+
+.checkbox-indicator::before {
+  content:"";
+  position: absolute;
+  bottom: 10px;
+  width: 30px;
+  height: 15px;
+  border: 4px solid transparent;
+  border-left-color: white;
+  border-bottom-color: white;
+  transform: rotate(315deg);
+   display: none;
+
+
+
 }
 
 .results-title {
