@@ -66,7 +66,11 @@ ul {
 
 .main-navigation-item {
   width: 20%;
-  margin-right: auto;
+}
+
+.main-navigation-item:nth-child(2) {
+margin-right: auto;
+
 }
 
 .hero {
@@ -96,6 +100,8 @@ ul {
   font-weight: normal;
   line-height: 26px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .advantages-list {
@@ -110,6 +116,7 @@ ul {
 
 .reverse {
   flex-direction: row-reverse;
+  order: -2;
 }
 
 .main-advantage {
@@ -139,15 +146,19 @@ ul {
 
 }
 
-.plus-wrapper {
-  display: flex;
-  background-color: #EEEEEE;
+.priveleges {
+  order: -1;
+}
+
+.grey {
+  background-color:#EEEEEE;;
 }
 
 .plus-item {
   width: 30%;
   flex-grow: 1;
   padding: 40px 80px;
+
 }
 
 .plus-item::last-child {
@@ -379,6 +390,9 @@ ul {
 
 .hotels-form {
   background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #427b9e;
   min-height: 200px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -426,19 +440,54 @@ ul {
 .results-title {
   font-size: 21px;
   line-height: 26px;
+  margin-right: 47px;
+
+}
+
+.hotels-sort {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.section-links {
+  display: flex;
+
 }
 
 .section-links-title {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
+  margin-right: 40px;
+
+}
+
+.link-active {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #81B3D2;
+  margin-right: 32px;
+
 }
 
 .link {
   font-size: 12px;
   line-height: 18px;
-  color: #81B3D2;
+  font-weight: normal;
+  color: #000000;
+  opacity: 0.3;
+  margin-right: 32px;
+  border: transparent;
+  border-bottom: dotted 1px;
+  border-color: #81B3D2;
+
 }
+
+
+
 
 .article-list li {
   border-top: 1px solid red;
