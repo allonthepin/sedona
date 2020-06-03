@@ -74,12 +74,19 @@ margin-right: auto;
 }
 
 .hero {
-  background-image: url(img/background-photo.jpg)
+  background-image: url(img/background-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #427b9e;
 }
 
 .hero img {
  display: block; 
  margin: 0 auto;
+ padding-top: 85px;
+ padding-bottom: 85px;
+ max-height: 600px;
+ width: 100%;
 }
 
 .advantages {
@@ -209,6 +216,7 @@ margin-right: auto;
 .hotel-search-container {
   max-width:568px;
   margin: 0 auto;
+  position: relative;
 }
 
 
@@ -246,10 +254,15 @@ margin-right: auto;
 }
 
 .hotel-search-form {
+  position: absolute;
+  left: 0
+  right: 0;
+  top: 100%;
   padding-top: 61px;
   padding-bottom: 55px;
   padding-left: 55px;
   padding-right: 55px;
+  background-color: #FFFFFF; 
 }
 
 .form-text {
@@ -313,8 +326,17 @@ margin-right: auto;
 
 .map-image {
   max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
 }
 
 .page-footer {
@@ -327,7 +349,6 @@ margin-right: auto;
   line-height: 26px; 
   padding-top: 23px;
   padding-bottom: 36px;
-  padding-left: 117px;
   margin: 0;
 }
 
@@ -360,6 +381,11 @@ margin-right: auto;
   display: flex;
   align-items: center;
 }
+
+.copyright-text {
+  margin-right: 8px;
+}
+
 
 .copyright-image {
   padding-top: 38px;
@@ -433,9 +459,104 @@ margin-right: auto;
   transform: rotate(315deg);
    display: none;
 
+}
 
+.price {
+  color: #FFFFFF;
+}
+
+.price-cell {
+  border: solid white 1.5px;
+  background-color: transparent;
+  display: flex;
+  width: 160px;
+  align-items: center;
+}
+
+.price-filter {
+  width: 50%;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 5px;
+  font-weight: normal;
 
 }
+
+.price-value {
+  background-color: transparent;
+  border: 0;
+  border-left-color: transparent;
+  color: #FFFFFF;
+  text-align: center;
+  min-width: 0;
+  text-align: left;
+  padding: 8px 8px;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.range {
+  margin-top: 10px;
+}
+
+.range-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 21px;
+}
+
+.range-line::before {
+  content:"";
+  border: none;
+  background-color: #FFFFFF; 
+  opacity: 0.3;
+  color: white; 
+  height: 2px; 
+  display: block;
+  width: 100%;
+
+}
+
+.range-roll {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ABABAB;
+  border-radius: 50%;
+  border: solid white 8px;
+}
+
+.range-roll.first {
+  left: 0;
+
+}
+
+.range-roll.second {
+left: 80%;
+}
+
+.range-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.range-button {
+  padding: 7px 35px;
+  background-color: transparent;
+  border: solid white 2px;
+  font: inherit;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+  margin-top: 33px;
+}
+
 
 .results-title {
   font-size: 21px;

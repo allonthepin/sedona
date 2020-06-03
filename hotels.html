@@ -51,27 +51,47 @@
             </label>
           </div>
           <div class="filter-group">
-              <span class="filter-group-legend">Тип жилья:</span>
-              <label class="checkbox">
-                <input type="checkbox" name="hotel" checked class="visually-hidden">
-                <span class="checkbox-indicator"></span>
-                <span class="checkbox-caption">Гостиница</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" name="motel" checked class="visually-hidden">
-                <span class="checkbox-indicator"></span>
-                <span class="checkbox-caption">Мотель</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" name="apartments" checked class="visually-hidden">
-                <span class="checkbox-indicator"></span>
-                <span class="checkbox-caption">Апартаменты</span>
-              </label>
-            </div>
+            <span class="filter-group-legend">Тип жилья:</span>
+            <label class="checkbox">
+              <input type="checkbox" name="hotel" checked class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              <span class="checkbox-caption">Гостиница</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="motel" checked class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              <span class="checkbox-caption">Мотель</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="apartments" checked class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              <span class="checkbox-caption">Апартаменты</span>
+            </label>
+          </div>
         </div>
-
-        <div class="range">
-          <button type="submit">Показать</button>
+        <div class="price">
+          <span>Стоимость в сутки (Р):</span>
+          <div class="price-wrapper">
+            <label class="price-cell">
+              <span class="price-filter">от</span>
+              <input type="text" name="min" value="0" class="price-value">
+            </label>
+            <label class="price-cell">
+              <span class="price-filter">до</span>
+              <input type="text" name="max" value="3000" class="price-value">
+            </label>
+          </div>
+          <div class="range">
+            <div class="range-line">
+              <div class="range-wrapper">
+                <div class="range-roll first">
+                </div>
+                <div class="range-roll second">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="range-button">Показать</button>
         </div>
       </div>
     </form>
@@ -163,14 +183,15 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
+   <footer class="page-footer">
+    <div class="container footer">
     <p class="contacts">
       <a href="#" class="contacts-link hashtag">#visitsedona</a>
       <a href="tel:84956660166" class="contacts-link phone"> Тел: +7(495) 666-01-66</a>
     </p>
     <ul class="socials">
       <li>
-        <a href="#">
+        <a href="#" class="twitter">
           <img src="img/twitter.svg">
         </a>
       </li>
@@ -189,6 +210,8 @@
       <span class="copyright-text">Website by</span>
       <img src="img/logo-htmlacademy.svg" class="copyright-image">
     </p>
+  </div>
   </footer>
 </body>
+
 
