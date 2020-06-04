@@ -498,8 +498,10 @@ margin-right: auto;
   justify-content: center;
 }
 
+
 .range {
   margin-top: 10px;
+  position: relative;
 }
 
 .range-line {
@@ -510,6 +512,7 @@ margin-right: auto;
 }
 
 .range-line::before {
+  position: absolute;
   content:"";
   border: none;
   background-color: #FFFFFF; 
@@ -518,30 +521,29 @@ margin-right: auto;
   height: 2px; 
   display: block;
   width: 100%;
+}
+
+.range-line.active {
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
 }
 
-.range-roll {
-  position: absolute;
+.range-line.active::before {
+  opacity: 1;
+}
+
+.range-handler {
+  position: relative;
   width: 20px;
   height: 20px;
   background: #ABABAB;
   border-radius: 50%;
   border: solid white 8px;
-}
-
-.range-roll.first {
-  left: 0;
-
-}
-
-.range-roll.second {
-left: 80%;
-}
-
-.range-wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .range-button {
