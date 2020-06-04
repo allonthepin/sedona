@@ -26,7 +26,16 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0; 
-}   
+}
+
+button {
+  font: inherit;
+  text-transform: inherit;
+}
+
+svg {
+  fill: currentColor;
+}
 
 .visually-hidden {
   position: absolute;
@@ -48,6 +57,47 @@ ul {
   top:0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.button {
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  padding: 3px 15px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669EC0;
+  outline: 0;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496BD;
+}
+
+.button.secondary {
+  background-color:#766357;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: #604E43;
+}
+
+.button.big {
+  display: block;
+  width: 100%;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.button.giant {
+  min-height: 86px;
 }
 
 .main-navigation-links {
@@ -237,20 +287,11 @@ margin-right: auto;
   font-weight: normal;
   line-height: 24px;
   text-align: center;
-\
+
 }
 
 .hotel-search-button {
-  width: 100%;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  background-color: #766357;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border:0;
+  min-height: 86px;
 }
 
 .hotel-search-form {
@@ -374,6 +415,12 @@ margin-right: auto;
   width: 48px;
   height: 46px;
   display: flex;
+}
+
+.social-link:hover
+.social-link:focus, {
+   background-color: #669EC0;
+   outline: 0;
 }
 
 .copyright {
@@ -609,11 +656,14 @@ margin-right: auto;
 
 }
 
-
+.article-list {
+  border-bottom: 1px solid #E5E5E5;;
+}
 
 
 .article-list li {
-  border-top: 1px solid red;
+  border-top: 1px solid #E5E5E5;
+
 }
 
 .hotel {
@@ -663,23 +713,6 @@ margin-right: auto;
   min-width: 110px;
   padding: 3px 12px;
   text-align: center;
-}
-
-.article-link {
-  color: #FFFFFF;
-  background-color: #81B3D2;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.alternate {
-  background-color:#766357;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .hotel-rating {
